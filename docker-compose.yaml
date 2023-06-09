@@ -7,13 +7,13 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: inventory
+      POSTGRES_DB: product
     ports:
       - "5432:5432"
 
-  inventory-service:
-    container_name: inventory-service
-    image: inventory-service
+  product-service:
+    container_name: product-service
+    image: product-service
     ports:
       - "8080:8080"
     restart: "always"
